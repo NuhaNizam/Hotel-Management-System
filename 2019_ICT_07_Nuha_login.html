@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>LOGIN PAGE</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+	<style type="text/css">
+		.navmenu{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			position: absolute;
+			overflow: hidden;
+			z-index: -1;
+		}
+		.navbar{
+			padding: 0;
+			margin: 0;
+			display: flex;
+			background-color: rgba(0, 0, 0, 0.8);
+			position: sticky;
+			z-index: 1;
+		}
+		.royal_hotel{
+			margin-left: 20px;
+			color: red;
+			font-size: 25px;
+			letter-spacing: 2px;
+		}
+		li.nav a{
+		 	float: right;
+		 	padding: 8px 15px 15px 5px;
+		 	display: block;
+		 	text-decoration: none;
+		 	color:white;
+		 	transition: 0.3s;
+		 }
+		 li a:hover{
+ 			color: red;
+ 		}
+		body {
+		background: url("login_image_1.jpg") no-repeat  center center fixed;
+		-webkit-background-size :fixed;
+		-moz-background-size :fixed;
+		-o-background-size :fixed;
+		background-size :cover;	
+		}
+		fieldset{
+			text-align: center;
+		    width: 50%;
+			margin: auto;
+			border: none;
+			background-color: rgba(0, 0, 000, 0.5);
+			margin-top: 100px;
+			font-size: 20px;
+		}
+		input.submit{
+			background: transparent;
+			font-size: 18px;
+			width: 150px;
+			border: 2px solid white;
+			color: red;
+		}
+		.submit:hover{
+			color: white;
+		}
+		
+		img{
+			border-radius: 100px;
+			width: 150px;
+		}
+		.input{
+			background: transparent;
+			border: 2px solid red;
+			padding: 8px;
+			width: 300px;
+		}
+		::placeholder{
+			color: white;
+			font-weight: bold;
+		}
+		label{
+			font-size: 30px;
+			font-weight: bold;
+			color: whitesmoke;
+		}
+		.footer{
+			margin-top: 200px;
+			padding: 2px 0;
+			background-color:rgba(0, 0, 000, 0.8) ;
+			box-sizing: border-box;
+		}
+		.footer ul{
+			list-style: none;
+
+		}
+		.container{
+			width: 500px;
+			margin: auto;
+		}
+		.row{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.footer-col{
+			width: 30%;
+			padding:  2px 50px;
+			margin: -2px;
+		}
+		.footer-col h4{
+			font-size: 18px;
+			color: #ffffff;
+			text-transform: capitalize;
+			margin-bottom: 15px;
+			font-weight: 500;
+			position: relative;
+		}
+		.footer-col ul li a{
+			list-style: none;
+			font-size: 16px;
+			text-transform: capitalize;
+			color: #ffffff;
+			text-decoration: none;
+			font-weight: 300;
+			color: #bbbbbb;
+			display: inline-block;
+			transition: all 0.3s ease;
+		}
+		.footer-col ul li a:hover{
+			color: red;
+			padding-left: 8px;
+		}
+		.footer-col .social-links a{
+			display: inline-block;
+			height: 40px;
+			width: 40px;
+			background-color: rgba(255, 255, 255, 0.2);
+			margin: 0 10px 10px 0;
+			text-align: center;
+			line-height: 40px;
+			border-radius: 50%;
+			color: #ffffff;
+			transition: all 0. 4s ease;
+		}
+		.footer-col .social-links a:hover{
+			color: #24262b;
+			background-color: #ffffff;
+		}
+		.row .footer-col{
+			line-height: 2.5;
+			text-align: left;
+		}
+		 
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+		<div class="navbar">
+			<div>
+				<h1 class="royal_hotel">ROYAL HOTEL</h1>
+			</div>
+			<ul class="navmenu">
+				<li class="nav"><a href="2019_ICT_07_Nuha_aboutus.html">ABOUT US</a></li>
+				<li class="nav"><a href="2019_ICT_07_Nuha_contactus.html">CONTACT US</a></li>
+				<li class="nav"><a href="2019_ICT_07_Nuha_gallery.html">GALLERY</a></li>
+				<li class="nav"><a href="2019_ICT_07_Nuha_login.html">LOGIN</a></li>
+				<li class="nav"><a href="2019_ICT_07_Nuha_reservation.html">RESERVATION</a></li>
+				<li class="nav"><a href="2019_ICT_07_Nuha_Hotel_Management_System.html">HOME</a></li>
+			</ul>
+		</div>
+	</nav>
+	</header>
+	<form acction=/acction.php_page>
+		<fieldset>
+			<img src="login_icon.jpg"><br><br>
+			<label for="uname">Username	:</label>
+			<input type="text" name="uname" id="uname" placeholder="Enter Username" class="input"><br><br>
+			<label for="pwd">Password	:</label>
+			<input type="Password" name="pwd" id="pwd" placeholder="Enter Password" class="input"><br><br>
+			<a href="#">
+			<input type="submit" name="submit" value="submit" class="submit"></a>
+			<input type="reset" name="reset" class="submit">
+		</fieldset>
+	</form>
+	<footer class="footer">
+ 		<div class="container">
+ 			<div class="row">
+ 				<div class="footer-col">
+ 					<ul>
+ 						<li><a href="2019_ICT_07_Nuha_aboutus.html">About Us</a></li>
+ 						<li><a href="#">Our Services</a></li>
+ 						<li><a href="#">Privacy policy</a></li>
+ 						<li><a href="#">FAQ</a></li>
+ 					</ul>
+ 				</div>
+ 				<div class="footer-col">
+ 					<h4>Follow us</h4>
+ 					<div class="social-links">
+ 						<a href="#"><i class="fab fa-facebook-f"></i></a>
+ 						<a href="#"><i class="fab fa-twitter"></i></a>
+ 						<a href="#"><i class="fab fa-instagram"></i></a>
+ 						<a href="#"><i class="fab fa-linkedin-in"></i></a>		
+ 				</div>
+ 			</div>
+ 		</div>
+ 		
+ 	</footer>
+</body>
+</html>
